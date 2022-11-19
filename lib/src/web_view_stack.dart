@@ -16,7 +16,7 @@ class _WebViewStackState extends State<WebViewStack> {
     return Stack(
       children: [
         WebView(
-          initialUrl: 'https://flutter.dev',
+          initialUrl: 'https://finderucc.com',
           onPageStarted: (url) {
             setState(() {
               loadingPercentage = 0;

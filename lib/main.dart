@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'src/web_view_stack.dart';  // Add this import
+import 'src/web_view_stack.dart';
 
 void main() {
   runApp(
@@ -23,7 +23,7 @@ class _WebViewAppState extends State<WebViewApp> {
       appBar: AppBar(
         title: const Text('Flutter WebView'),
       ),
-      body: const WebViewStack(),   // Replace the WebView widget with WebViewStack
+      body: const WebViewStack(),
     );
   }
 }
