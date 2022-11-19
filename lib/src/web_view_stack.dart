@@ -19,7 +19,7 @@ class _WebViewStackState extends State<WebViewStack> {
     return Stack(
       children: [
         WebView(
-          initialUrl: 'https://finderucc.com',
+          initialUrl: 'https://flutter.dev',
           onWebViewCreated: (webViewController) {
             widget.controller.complete(webViewController);
           },
@@ -52,7 +52,7 @@ class _WebViewStackState extends State<WebViewStack> {
             }
             return NavigationDecision.navigate;
           },
-          // ... to here.
+          javascriptMode: JavascriptMode.unrestricted,        // Add this line
         ),
         if (loadingPercentage < 100)
           LinearProgressIndicator(
