@@ -38,6 +38,21 @@ class _WebViewStackState extends State<WebViewStack> {
               loadingPercentage = 100;
             });
           },
+          navigationDelegate: (navigation) {
+            final host = Uri.parse(navigation.url).host;
+            if (host.contains('youtube.com')) {
+              ScaffoldMessenger.of(context).showSnackBar(
+                SnackBar(
+                  content: Text(
+                    'Blocking navigation to $host',
+                  ),
+                ),
+              );
+              return NavigationDecision.prevent;
+            }
+            return NavigationDecision.navigate;
+          },
+          // ... to here.
         ),
         if (loadingPercentage < 100)
           LinearProgressIndicator(
