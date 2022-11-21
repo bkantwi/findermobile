@@ -27,7 +27,7 @@ class _WebViewAppState extends State<WebViewApp> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Flutter WebView'),
+        title: const Text('Finder.U.C.C'),
         actions: [
           NavigationControls(controller: controller),
           Menu(controller: controller),
