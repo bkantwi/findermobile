@@ -1,7 +1,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.arktechfindermobileapp.findermobileapp">
    <application
-        android:label="findermobileapp"
+        android:label="Finder UCC"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
         <activity

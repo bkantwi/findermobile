@@ -8,6 +8,7 @@ import 'src/web_view_stack.dart';
 void main() {
   runApp(
     const MaterialApp(
+      debugShowCheckedModeBanner: false,
       home: WebViewApp(),
     ),
   );
@@ -27,7 +28,7 @@ class _WebViewAppState extends State<WebViewApp> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Finder.U.C.C'),
+        title: const Text('Finder U.C.C'),
         actions: [
           NavigationControls(controller: controller),
           Menu(controller: controller),

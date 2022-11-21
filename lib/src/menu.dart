@@ -33,7 +33,7 @@ class _MenuState extends State<Menu> {
           onSelected: (value) async {
             switch (value) {
               case _MenuOptions.navigationDelegate:
-                await controller.data!.loadUrl('https://youtube.com');
+                await controller.data!.loadUrl('https://portal.ucc.edu.gh');
                 break;
               case _MenuOptions.userAgent:
                 final userAgent = await controller.data!
@@ -78,7 +78,7 @@ class _MenuState extends State<Menu> {
           itemBuilder: (context) => [
             const PopupMenuItem<_MenuOptions>(
               value: _MenuOptions.navigationDelegate,
-              child: Text('Navigate to YouTube'),
+              child: Text('Students Portal'),
             ),
             const PopupMenuItem<_MenuOptions>(
               value: _MenuOptions.userAgent,

@@ -43,6 +43,7 @@ dev_dependencies:
   flutter_native_splash: ^2.2.15
   flutter_test:
     sdk: flutter
+  connectivity: ^3.0.6
 
 flutter_native_splash:
   image: assets/images/logo.png
